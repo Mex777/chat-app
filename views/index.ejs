@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat-app</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Chat-app</h1>
+    <ul class="chat">
+      <% messages.forEach(message => { %>
+        <li>
+          <h3><%=message.title %></h2>
+          <h4><%=message.user %></h3>
+          <h5><%=message.added %></h4>
+          <p><%=message.text %></p>
+        </li>
+      <% }); %>
+    </ul>
+    <a href="/add">
+      <button>Send a new message</button>
+    </a>
+  </body>
+</html>
